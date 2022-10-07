@@ -1,17 +1,20 @@
+import java.util.Scanner;
 public class Tugas2 {
     public static void main (String[] args){
-        int A = 0;
-        int B = 0;
+        Scanner inputan = new Scanner(System.in);
+        System.out.println("Masukkan angka untuk variabel A:");
+        int A = inputan.nextInt();
+        System.out.println("Masukkan angka untuk variabel B:");
+        int B = inputan.nextInt();
 
         if(A == B){
-            System.out.println(A);
-            System.out.println(B);
-        }else{
-            if(A < B){
-                System.out.println(A);
-            }else{
-                System.out.println(B);
-            }
+            System.out.println("Variabel A: " + A);
+            System.out.println("Variabel B: " + B);
+        } else if (A < B) {
+            System.out.println("Variabel A: " + A);
+        } else {
+            System.out.println("Variabel B: " + B);
         }
+        inputan.close();
     }
 }

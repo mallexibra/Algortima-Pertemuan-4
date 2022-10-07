@@ -22,39 +22,40 @@ public class Tugas4 {
         // Tanganku sebagai gunting
         if(tanganku == gunting && tanganmu == gunting ){
             System.out.println("Gunting VS Gunting");
-            System.out.println("Hasil dari tanganku dan tanganmu adalah SEIMBANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah SERI");
         }else if(tanganku == gunting && tanganmu == kertas){
             System.out.println("Gunting VS Kertas");
-            System.out.println("Hasil dari tanganku dan tanganmu TANGANKU MENANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah TANGANKU MENANG");
         }else if(tanganku == gunting && tanganmu == batu){
             System.out.println("Gunting VS Batu");
-            System.out.println("Hasil dari tanganku dan tanganmu TANGANMU MENANG");
-        }else if(tanganku >= 3 || tanganmu >= 3){
+            System.out.println("Hasil dari tanganku dan tanganmu adalah TANGANMU MENANG");
+        }else{
             System.out.println("Masukkan angka yang benar dong!");
         }
 
         // Tanganku sebagai batu
         if(tanganku == batu && tanganmu == batu ){
             System.out.println("Batu VS Batu");
-            System.out.println("Hasil dari tanganku dan tanganmu adalah SEIMBANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah SERI");
         }else if(tanganku == batu && tanganmu == kertas){
             System.out.println("Batu VS Kertas");
-            System.out.println("Hasil dari tanganku dan tanganmu TANGANKU MENANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah TANGANKU MENANG");
         }else if(tanganku == batu && tanganmu == gunting){
             System.out.println("Batu VS Gunting");
-            System.out.println("Hasil dari tanganku dan tanganmu TANGANMU MENANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah TANGANMU MENANG");
         }
 
         // Tanganku sebagai kertas
         if(tanganku == kertas && tanganmu == kertas ){
             System.out.println("Kertas VS Kertas");
-            System.out.println("Hasil dari tanganku dan tanganmu adalah SEIMBANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah SERI");
         }else if(tanganku == kertas && tanganmu == batu){
             System.out.println("Kertas VS Batu");
-            System.out.println("Hasil dari tanganku dan tanganmu TANGANKU MENANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah TANGANKU MENANG");
         }else if(tanganku == kertas && tanganmu == gunting){
             System.out.println("Kertas VS Gunting");
-            System.out.println("Hasil dari tanganku dan tanganmu TANGANMU MENANG");
+            System.out.println("Hasil dari tanganku dan tanganmu adalah TANGANMU MENANG");
         }
+        masukan.close();
     }
 }
